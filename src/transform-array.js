@@ -20,7 +20,7 @@ function transform(arr) {
 
   const array = [...arr];
 
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     if (array[i] === '--double-next' && array[i + 1]) {
       array[i] = array[i + 1]; 
     }
