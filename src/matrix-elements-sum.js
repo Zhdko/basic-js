@@ -16,9 +16,21 @@ const { NotImplementedError } = require('../lib');
  *
  * The result should be 9
  */
-function getMatrixElementsSum(/* matrix */) {
-  // Remove line below and write your code here
-  throw new NotImplementedError('Not implemented');
+function getMatrixElementsSum(matrix) {
+  let sum = 0;
+
+  for (let col = 0; col < matrix[0].length; col++) {
+    for (let row = 0; row < matrix.length; row++) {
+      let prev = row === 0 ? 1 : matrix[row - 1][col];
+      let curr = matrix[row][col];
+
+      if (prev === 0) break;
+      
+      sum += curr;
+    }
+  }
+
+  return sum;
 }
 
 module.exports = {
