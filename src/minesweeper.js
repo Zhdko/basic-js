@@ -22,8 +22,24 @@ const { NotImplementedError } = require('../lib');
  *  [2, 1, 1],
  *  [1, 1, 1]
  * ]
+ * 
+ * [i - 1][j - 1] [i - 1][j]  [i - 1][j + 1]
+ *    [i][j - 1]    [i][j]      [i][j + 1]
+ * [i + 1][j - 1]  [i + 1][j]  [i + 1][j + 1]
  */
 function minesweeper(/* matrix */) {
+  // let count = 0;
+
+  // for (let row = 0; row < matrix.length; row++) {
+  //   let row = matrix[i];
+
+  //   let top = 
+
+  //   for (let col = 0; col < matrix[row].length; col++) {
+  //     if ()
+  //   } 
+  // }
+
   // Remove line below and write your code here
   throw new NotImplementedError('Not implemented');
 }
